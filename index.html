@@ -9,6 +9,7 @@
     <!-- Responsive web desing -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce - Home</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -17,35 +18,41 @@
     <!-- Esto es un comentario: CTRL + K luego C -->
 
     <header>
-        <h1>Tienda de <span>muebles</span></h1>
+        <h1 class="nombre-sitio">Tienda de <span>muebles</span></h1>
     </header>
 
-    <nav id="navegacion">
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="blog.html">Blog</a>
-        <a href="galeria.html">Galeria</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
 
-    <section>
+    <div class="hero"></div>
+
+    <section class="contenedor">
         <h2>Categorias de <span>productos</span></h2>
-        <div>
-            <img src="img/categoria1.jpg" alt="Img categoria" />
-            <a href="#">Oficina</a>
-        </div>
-        <div>
-            <img src="img/categoria2.jpg" alt="Img categoria" />
-            <a href="#">Hogar</a>
-        </div>
-        <div>
-            <img src="img/categoria3.jpg" alt="Img categoria" />
-            <a href="#">Cocina</a>
+        <div class="listado-categorias">
+            <div>
+                <img src="img/categoria1.jpg" alt="Img categoria" />
+                <a href="#">Oficina</a>
+            </div>
+            <div>
+                <img src="img/categoria2.jpg" alt="Img categoria" />
+                <a href="#">Hogar</a>
+            </div>
+            <div>
+                <img src="img/categoria3.jpg" alt="Img categoria" />
+                <a href="#">Cocina</a>
+            </div>
         </div>
     </section>
 
-    <section>
+    <section class="sobre-nosotros">
         <div>
             <h2>Sobre nosotros</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, dolorem!</p>

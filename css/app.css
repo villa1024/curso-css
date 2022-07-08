@@ -1,15 +1,55 @@
-h1 {
-    color: #000;
+html {
+    box-sizing: border-box;
 }
 
-h1 span {
+*, *:before, *::after {
+    box-sizing: inherit;
+}
+
+/* Globales */
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header y Navegacion */
+.nombre-sitio {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.nombre-sitio span {
     color: #037bc0;
 }
 
-h2 span {
-    color: green;
+.contenedor-navegacion {
+    border-top: 1px solid #e1e1e1;
 }
 
-.navegacion a {
-    text-transform: lowercase;
+.nav-principal {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero {
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
+/* Categorias */
+
+.listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
