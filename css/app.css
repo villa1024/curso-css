@@ -6,6 +6,15 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', sans-serif;
+}
+
+
 /* Globales */
 a {
     text-decoration: none;
@@ -16,6 +25,12 @@ a {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
 
 /* Header y Navegacion */
 .nombre-sitio {
@@ -46,7 +61,25 @@ a {
     height: 550px;
 }
 
+
 /* Categorias */
+
+.categorias h2 {
+    text-align: center;
+}
+
+.categoria a {
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.categoria a:hover {
+    background-color: #037bc0;
+    color: #FFFFFF;
+    border-bottom-right-radius: 20px;
+}
 
 .listado-categorias {
     display: grid;
