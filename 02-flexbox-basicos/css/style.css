@@ -98,3 +98,90 @@ h1, h2 {
     height: 700px;
     align-items: center;
 }
+
+/* 6 */
+.d-flex-6 {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    /* Los ordena de abajo hacia arriba */
+    justify-content: flex-end;
+    /* Los ordena de izquierda a derecha */
+    align-items: flex-start;
+}
+
+/* 7 */
+.d-flex-7 {
+    display: flex;
+    height: 800px;
+    /* Por default */
+    /* flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch; */
+
+}
+
+/* 8 */
+.d-flex-8 {
+    display: flex;
+}
+.d-flex-8 .box {
+    flex-basis: 33.3%;
+}
+
+/* 9 */
+.d-flex-9 {
+    display: flex;
+    justify-content: space-between;
+}
+.d-flex-9 .box {
+    flex-basis: calc(33.3% - 1rem);
+}
+
+/* 10 */
+.d-flex-10 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-flex-10 .box {
+    flex-basis: 33.3%;
+}
+
+/* 11 */
+.d-flex-11 {
+    display: flex;
+}
+.d-flex-11 .box:nth-child(1) {
+    flex-grow: 2;
+}
+.d-flex-11 .box:nth-child(2) {
+    flex-grow: 1;
+}
+.d-flex-11 .box:nth-child(3) {
+    flex-grow: 1;
+}
+
+/* 12 */
+.d-flex-12 {
+    display: flex;
+}
+.d-flex-12 .box {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+.d-flex-12 .box:nth-child(3) {
+    flex-shrink: 2;
+}
+
+/* 13 */
+.d-flex-13 {
+    display: flex;
+    justify-content: space-between;
+}
+.d-flex-13 .box {
+    /* flex-basis: 33.3%;
+    flex-grow: 1;
+    flex-shrink: 1; */
+    /* grow / shrink / basis */
+    flex: 1 0 calc(33.3% - 1rem);
+}
